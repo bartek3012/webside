@@ -1,0 +1,292 @@
+﻿/*Ustawienie ogólnego stylu aplikacji*/
+body 
+{
+    background-color: #444444;
+    color: white;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif; /*Czcionka pobrana z google fonts*/
+}
+
+/*Główny pojemnik na całą zawartośc strony*/
+#content 
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/*Nagłówek strony*/
+#header 
+{
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 60px;
+    line-height: 100%; /*Ogległość między liniami (nie wiedzieć czemu nie była ustawiona na 100% domyslnie)*/
+    font-family: 'Anton', sans-serif; /*Czcionka z google fonts*/
+}
+
+/*Logo strony*/
+#logo 
+{
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Napis w w nagłówku strony*/
+#logo-name
+{
+    float: left;
+    text-align: right;
+}
+
+/*Obrazek z logiem strony*/
+#logo-picture 
+{
+    float: left;
+    padding-left: 10px;
+}
+
+/*Pasek menu*/
+.menu 
+{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f3ca20;
+    text-align: center;
+    font-weight: 700; /*Pogrubiona czcionka*/
+}
+
+ol 
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 200%;
+    display: inline-block;
+    text-align: center;
+}
+
+/*Lista numeryczna (w menu)*/
+ol a 
+{
+    color: #333333;
+    text-decoration: none;
+    display: block;
+}
+
+/*Elementy listy z menu*/
+ol > li 
+{
+        float: left;
+        width: 260px;
+        border-right: 1px solid #ffffff; /*Ramka (kreska) z prawej strony*/
+}
+
+/*Ramka była tylko z prawej strony elementu w tym celu należało dodać ramkę z lewej strony dla pierwszego elementu*/
+ol > li:first-child 
+{
+    border-left: 1px solid #ffffff;
+}
+
+/*Elementy listy z menu po najechaniu na nie kursorem*/
+ol > li:hover 
+{
+    background-color: #e8bf14
+}
+
+/*Po najechaniu na rozwijane pole w menu*/
+ol>li:hover >ul
+{
+    display:block;/*Wyświetlenie elementów listy jako blok*/
+}
+
+/*Elementy rozwijanej listy z menu (bez najechania na nie kursorem)*/
+ol>li>ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 0px;
+    display: none; /*Ukryj elementy rozwijanej listy*/
+}
+
+/*Element rozwijanej listy z menu*/
+ol > li > ul > li
+{
+    background-color: #e8bf14;
+    z-index: 100; /*Index z oznacza, że element przykrywa pozostałe (o mniejszym, domyślnym indeksie)*/
+    border-top: 1px solid #ffffff;
+}
+
+/*Podświetlenie elementu rozwijanej listy po najechaniu na nie*/
+ol > li > ul > li :hover
+{
+    background-color: #f3ca20
+}
+
+
+/*Główna zawartość strony*/
+#content 
+{
+    margin-top: 30px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 340px;
+}
+
+/*Lewa część głównej zawartości strony - ze zdjęciem*/
+.content-left {
+    background-color: #333333;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    float: left;
+    padding: 0;
+    height: 340px;
+    width: 320px;
+}
+
+/*Prawa część głównej zawartości strony (Nagłówekm opis i przycisk do projektu)*/
+#content-right {
+    background-color: #333333;
+    margin-top: auto;
+    margin-bottom: auto;
+    float: right;
+    width: 780px;
+    padding: 40px;
+    padding-top: 0px;
+    height: 300px;
+}
+
+/*Tekst "o mnie"*/
+#text-content 
+{
+    text-align: justify;
+}
+
+/*Klasa do zaokrąglonych przycisków używanych na stronach*/
+.button-content 
+{
+    border-radius: 20px; /*Zaokrąglenie przycisku*/
+    border: 1px solid white;
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+    padding: 13px;
+    background-color: #444444;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+/*Zmiana tła i koloru czcionki po najechaniu na przycisk*/
+.button-content:hover 
+{
+   background-color: #f3ca20;
+   color: #333333
+}
+
+/*Stylizacja linku w któym znajduje się przycisk*/
+a.button-link 
+{
+    color: white;
+    text-decoration: none; /*Usunięcie podkreślenia*/
+}
+
+/*Stylizacja nagłówka*/
+h1 
+{
+    color: #f3ca20;
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Pojemnik na diva z mediami społecznościowymi*/
+#socials
+{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;   
+}
+
+/*Wyśrodkowany i określonej długości pojemnik na kafelki mediów społecznościowych*/
+#socialsdivs 
+{
+    width: 1200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #292929;
+    display: flex; /*Ułożenie kafelków obok siebie*/
+}
+
+/*Kafelek facebooka*/
+.fb
+{
+    width: 300px;
+    height: 185px;
+
+}
+/*Po najechaniu na kafelek tło zmienia się na odpowiednie dla danego medium społecznościowego*/
+.fb:hover 
+{
+    background-color: #4668b3;
+}
+/*Kafelek Githuba*/
+.git 
+{
+    width: 300px;
+    height: 185px;
+}
+/*Po najechaniu na kafelek tło zmienia się na odpowiednie dla danego medium społecznościowego*/
+.git:hover 
+{
+    background-color: #ffffff;
+    color: #211F1F;
+}
+/*Kafelek Linktin*/
+.linkedin {
+    width: 300px;
+    height: 185px;
+}
+/*Po najechaniu na kafelek tło zmienia się na odpowiednie dla danego medium społecznościowego*/
+.linkedin:hover 
+{
+    background-color: #0072b1
+}
+/*Kafelek gmail (kontakt)*/
+.gmail 
+{
+    width: 300px;
+    height: 185px;
+}
+/*Po najechaniu na kafelek tło zmienia się na odpowiednie dla danego medium społecznościowego*/
+.gmail:hover 
+{
+    background-color: #d95333;
+}
+/*Linki domyślnie wyświetlają się jako niebieskie + mają podkreślenia, klasa dostosowuje ich wygląd*/
+a.social-link 
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+/*Stopka strony*/
+#footer
+{
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #111111;
+    text-align: center;
+    padding: 20px;
+}
+

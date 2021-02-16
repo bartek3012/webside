@@ -1,0 +1,81 @@
+﻿/*Kontener na głowne dane z lewej części strony 
+  (slider, kripki do przełączania slajdu i przycisk do następnego projektu)*/
+#content-left-tribal 
+{
+    float: left;
+    background-color: #333333;
+    text-align: center; 
+    padding: 20px;
+    height: 620px;
+    width: 640px;
+}
+
+/*Konetner na prawą część główne dane z prawej części
+ (nagłówek z opisem oraz przycisk przekierowująco do kody źródłowego strony)
+*/
+#content-right-tribal {
+    background-color: #333333;
+    margin-top: auto;
+    margin-bottom: auto;
+    float: right;
+    width: 420px;
+    padding: 40px;
+    padding-top: 0px;
+    height: 620px;
+    text-align: justify; /*Jusotwanie tekstu*/
+}
+
+/*Klasy .photo1, .photo2 i .photo3 zostały stworzone dla wszystkich plików styli kart z projektami (nawet mimo czasem takich samych klas),
+    miło to na celu dopasowanie nazw tak, aby wszytski karty z projektami można było obsługowac za pomoca jednego pliku js do zmiany
+    slajdów (change-photo.js)
+*/
+/*Pierwsze zdjecie w sliderze*/
+.photo1 {
+    margin-top: 10px;
+    margin-bottom: auto;
+    width: 633px;
+    height: 472px;
+}
+/*Drugie zdjecie w sliderze*/
+.photo2 {
+    margin-top: 10px;
+    margin-bottom: auto;
+    width: 633px;
+    height: 472px;
+}
+/*Trzecie zdjecie w sliderze*/
+.photo3 {
+    margin-top: 30px;
+    margin-bottom: auto;
+    width: 621px;
+    height: 417px;
+}
+
+/*Kontener na kropki do przełączania zdjęć*/
+#all-circle
+{
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/*Kropka do przełaczania zdjęć*/
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%; /*Promień na połowe szerokości - aby otrzymac kształt okręgu*/
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+/*Najechanie na kropke*/
+.circle:hover
+{
+    cursor: pointer;
+}

@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../styles/style-main.css" rel="stylesheet" type="text/css" /> <!--Dodanie pliku ze stylami-->
+    <link rel="stylesheet" href="../fontello/css/fontello.css" type="text/css" /> <!--Dodanie elementów graficznych fontello-->
+    <link rel="stylesheet" href="../styles/style-diet-calculator.css" type="text/css" /> <!--Dodanie pliku ze stylami dopasowanymi do wyśiwetlanych zdjęć w karcie-->
+    <!--Dodanieczcionek google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script>var firstPartOfFileName = "diet-calculator";</script> <!--Zmienna używana przez plik js jako część ścieżki do pliku grafik do -->
+</head>
+
+<body onload="StartSlider()"> <!--Uruchomienie funkcji do przełączania slajdów w trakcie załadowania okna-->
+    <div id="container">
+        <!--Nagłówek strony-->
+        <div id="header">
+            <div id="logo">
+                <!--Napis z nałówka-->
+                <div id="logo-name">
+                    <span style="color: #f3ca20">B</span><span style="font-size: 50px">artosz</span><br>
+                    <span style="color: #f3ca20"> O</span><span style="font-size: 50px">lszewski</span>
+                </div>
+                <!--Logo z nagłówka-->
+                <div id="logo-picture">
+                    <img src="../images/logo.png" width="140" height="140"/>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <!--Pasek menu strony-->
+        <div class="menu">
+            <ol>
+                <li><a href="../index.html">Strona główna</a></li>
+                <li>
+                    <a href="#">Projekty</a>
+                    <!--Pozycje w rozwijanym pasku menu-->
+                    <ul>
+                        <li><a href="cycloid.html">OldCycolid</a></li>
+                        <li><a href="tribal-wars.html">Plemiona</a></li>
+                        <li><a href="funny-trader.html">Funny Trader</a></li>
+                        <li><a href="otomoto.html">Car Shop</a></li>
+                        <li><a href="diet-calculator.html">Diet Calculator</a></li>
+                        <li><a href="coffee-shop.html">Coffee Shop</a></li>
+                        <li><a href="funny-socks.html">Funny Socks</a></li>
+                        <li><a href="pentago.html">Pentago</a></li>
+                        <li><a href="vine-shop.html">Wine Shop</a></li>
+                    </ul>
+                </li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ol>
+        </div>
+        <!--Główna treść strony-->
+        <div id="content">
+            <!--Lewa część ze sliderem ze zdjęciami-->
+            <div id="content-left-tribal">
+                <div style="height: 550px">
+                    <div id="slider"></div>
+                </div>
+                <!--"Kropki" do przełączania zdjęć w sliderze-->
+                <div id="all-circle">
+                    <div onclick="SetPicture(1)" class="circle" id="c1"></div>
+                    <div onclick="SetPicture(2)" class="circle" id="c2"></div>
+                    <div onclick="SetPicture(3)" class="circle" id="c3"></div>
+                    <div style="clear:both"></div>
+                </div>
+                <!--Przycisk przekierowujący do następnego projektu-->
+                <a href="coffee-shop.html" class="button-link">
+                    <div class="button-content" style="margin-top: 20px">
+                        Następny projekt
+                    </div>
+                </a>
+            </div>
+            <!--Prawa część z opisem projektu-->
+            <div id="content-right-tribal">
+                <!--Nazwa projektu-->
+                <h1>Diet Calculator</h1>
+                <!--Opis-->
+                Program napisany dla studentki dietetyki w celu przyśpieszenia często wykonywanych obliczeń. Na podstawie podanej wagi, wzrostu, wieku, płci oraz współczynnika
+                aktywności fizycznej PAL obliczana jest podstawowa oraz całkowita przemiana materii. Ponadto określane jest BMI wraz z przyporządkowaniem do odpowiedniej grupy.
+                Podana w programie procentowa zawartość białka, węglowodanów i tłuszczy w diecie, pozwala na wyznaczenie w programie ile gram danej substancji powinna przyjąć 
+                osoba w swojej diecie.
+                <!--Przekierowanie do repozytorium z githuba-->
+                <a href="https://github.com/bartek3012/DietCalculator" class="button-link" target="_blank">
+                    <div class="button-content" style="margin-top: 205px">
+                        Kod źródłowy
+                    </div>
+                </a>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div style="clear:both"></div>
+        <!--Kafelki przenoszące do mediów społecznościowych-->
+        <div id="socials">
+            <div id="socialsdivs">
+                <!--Facebook-->
+                <a href="https://www.facebook.com/bartek.olszewski.940" class="social-link" target="_blank">
+                    <div class="fb"><i class="icon-facebook"></i></div>
+                </a>
+                <!--Github-->
+                <a href="https://github.com/bartek3012" class="social-link" target="_blank">
+                    <div class="git"><i class="icon-github-circled-alt2"></i></div>
+                </a>
+                <!--Linkedin-->
+                <a href="https://linkedin.com/in/bartosz-olszewski-c-sharp" class="social-link" target="_blank">
+                    <div class="linkedin"><i class="icon-linkedin"></i></div>
+                </a>
+                <!--Kontakt (mail)-->
+                <a href="contact.html" class="social-link">
+                    <div class="gmail"><i class="icon-mail"></i></div>
+                </a>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <!--Stopka strony-->
+        <div id="footer">
+            2021 &copy; Bartosz Olszewski Portfolio. Zapraszam do podjęcia współpracy!
+            <i class="icon-mail-alt"></i> bartoszolszewski6@gmail.com
+        </div>
+    </div>
+    <!--Dodanie plików js (biblioteki jquery i fliku odpowiadającego za zmianę zdjęć)-->
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/change-photo.js"></script>
+</body>
+</html>

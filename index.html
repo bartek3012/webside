@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="styles/style-main.css" rel="stylesheet" type="text/css" /> <!--Dodanie pliku ze stylami-->
+    <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" /> <!--Dodanie elementów graficznych fontello-->
+    <!--Dodanieczcionek google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <!--Nagłówek strony-->
+        <div id="header">
+            <div id="logo">
+                <!--Napis z nałówka-->
+                <div id="logo-name">
+                    <span style="color: #f3ca20">B</span><span style="font-size: 50px">artosz</span><br>
+                    <span style="color: #f3ca20"> O</span><span style="font-size: 50px">lszewski</span>
+                </div>
+                <!--Logo z nagłówka-->
+                <div id="logo-picture">
+                    <img src="images/logo.png" width="140" height="140"/>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <!--Pasek menu strony-->
+        <div class="menu">
+            <ol>
+                <li><a href="index.html">Strona główna</a></li>
+                <li>
+                    <a href="#">Projekty</a>
+                    <!--Pozycje w rozwijanym pasku menu-->
+                    <ul>
+                        <li><a href="pages/cycloid.html">OldCycolid</a></li>
+                        <li><a href="pages/tribal-wars.html">Plemiona</a></li>
+                        <li><a href="pages/funny-trader.html">Funny Trader</a></li>
+                        <li><a href="pages/otomoto.html">Car Shop</a></li>
+                        <li><a href="pages/diet-calculator.html">Diet Calculator</a></li>
+                        <li><a href="pages/coffee-shop.html">Coffee Shop</a></li>
+                        <li><a href="pages/funny-socks.html">Funny Socks</a></li>
+                        <li><a href="pages/pentago.html">Pentago</a></li>
+                        <li><a href="pages/vine-shop.html">Wine Shop</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/hobby.html">Hobby</a></li>
+                <li><a href="pages/contact.html">Kontakt</a></li>
+            </ol>
+        </div>
+        <!--Główna treść strony-->
+        <div id="content">
+            <!--Lewa część ze zdjeciem-->
+            <div class="content-left">
+                <img src="images/myPhoto.png" width="278" height="320" />
+            </div>
+            <!--Prawa część z opisem-->
+            <div id="content-right">
+                <div id="text-content">
+                    <h1>O mnie</h1>
+                    W październiku zacząłem ostatni semestr studiów inżynierskich na kierunku Automatyka i Robotyka.
+                    W trakcie studiów miałem możliwość spróbowania wielu dziedzin inżynierii m.in. budowy elektrycznego
+                    motocykla w Kole Naukowym Pojazdów i Robotów Mobilnych. Najbardziej jednak wciągnęło mnie programowanie,
+                    zaczynając od języka C, a następnie C++. Obecnie pisze w C# (.Net) aplikacje desktopowe przy użyciu bibliotek
+                    WPF lub Windows Forms i planuje dalszy rozwój w kierunku aplikacji webowych (ASP.Net).
+                </div>
+                <!--Przycisk przekierowujący do pierwszego projektu-->
+                <a href="pages/cycloid.html" class="button-link">
+                    <div class="button-content">
+                        Zobacz moje projekty
+                    </div>
+                </a>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <!--Kafelki przenoszące do mediów społecznościowych-->
+        <div id="socials">
+            <div id="socialsdivs">
+                <!--Facebook-->
+                <a href="https://www.facebook.com/bartek.olszewski.940" class="social-link" target="_blank">
+                    <div class="fb"><i class="icon-facebook"></i></div>
+                </a>
+                <!--Github-->
+                <a href="https://github.com/bartek3012" class="social-link" target="_blank">
+                    <div class="git"><i class="icon-github-circled-alt2"></i></div>
+                </a>
+                <!--Linkedin-->
+                <a href="https://linkedin.com/in/bartosz-olszewski-c-sharp" class="social-link" target="_blank">
+                    <div class="linkedin"><i class="icon-linkedin"></i></div>
+                </a>
+                <!--Kontakt (mail)-->
+                <a href="pages/contact.html" class="social-link">
+                    <div class="gmail"><i class="icon-mail"></i></div>
+                </a>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <!--Stopka strony-->
+        <div id="footer">
+            2021 &copy; Bartosz Olszewski Portfolio. Zapraszam do podjęcia współpracy!
+            <i class="icon-mail-alt"></i> bartoszolszewski6@gmail.com
+        </div>
+    </div>
+    <!--Dodanie pliku js (biblioteki jquery)-->
+    <script src="scripts/jquery.js"></script>
+</body>
+</html>

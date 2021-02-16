@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../styles/style-main.css" rel="stylesheet" type="text/css" /> <!--Dodanie pliku ze stylami-->
+    <link href="../styles/style-hobby.css" rel="stylesheet" type="text/css" /> <!--Dodanie pliku ze stylami dla strony kontakt-->
+    <link rel="stylesheet" href="../fontello/css/fontello.css" type="text/css" /> <!--Dodanie elementów graficznych fontello-->
+    <!--Dodanieczcionek google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <!--Nagłówek strony-->
+        <div id="header">
+            <div id="logo">
+                <!--Napis z nałówka-->
+                <div id="logo-name">
+                    <span style="color: #f3ca20">B</span><span style="font-size: 50px">artosz</span><br>
+                    <span style="color: #f3ca20"> O</span><span style="font-size: 50px">lszewski</span>
+                </div>
+                <!--Logo z nagłówka-->
+                <div id="logo-picture">
+                    <img src="../images/logo.png" width="140" height="140" />
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <!--Pasek menu strony-->
+        <div class="menu">
+            <ol>
+                <li><a href="../index.html">Strona główna</a></li>
+                <li>
+                    <a href="#">Projekty</a>
+                    <!--Pozycje w rozwijanym pasku menu-->
+                    <ul>
+                        <li><a href="cycloid.html">OldCycolid</a></li>
+                        <li><a href="tribal-wars.html">Plemiona</a></li>
+                        <li><a href="funny-trader.html">Funny Trader</a></li>
+                        <li><a href="otomoto.html">Car Shop</a></li>
+                        <li><a href="diet-calculator.html">Diet Calculator</a></li>
+                        <li><a href="coffee-shop.html">Coffee Shop</a></li>
+                        <li><a href="funny-socks.html">Funny Socks</a></li>
+                        <li><a href="pentago.html">Pentago</a></li>
+                        <li><a href="vine-shop.html">Wine Shop</a></li>
+                    </ul>
+                </li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ol>
+        </div>
+        <!--Główna treść strony-->
+        <div id="content">
+            <!--Lewa część ze zdjeciem-->
+            <div class="content-left-contact">
+                <img src="../images/MT.jpg" width="432" height="321" />
+                <a href="https://www.facebook.com/sagatgym/videos/1008136679232515" class="button-link" target="_blank">
+                    <div class="button-content" style="margin-top: 50px">
+                        Wideo
+                    </div>
+                </a>
+            </div>
+            <!--Prawa część z opisem-->
+            <div id="content-right-contact">
+                <div id="text-content">
+                    <h1>Muay-Thai</h1>
+                    Cechami wyróżniającymi boks tajski na tle innych popularnych stylów jest szerokie użycie uderzeń łokciami i kolanami (w formule amatorskiej na łokcie, kolana i korpus są zakładane ochraniacze, w walkach zawodowych są one nieosłonięte). Tego rodzaju uderzenia niejednokrotnie skutkują szybkimi nokautami.
+                    W boksie tajskim kładzie się również szczególny nacisk na używanie niskich kopnięć okrężnych. Podstawą stylu jest niskie kopnięcie w udo (z angielskiego zwane low kick). Posiada ono dużo wariantów – m.in. jako kopnięcie opadające z góry w dół. Wykonywane jest z mocnym dokręceniem ciała, a nawet obrocie zawodnika po nietrafieniu celu. Powierzchnią kopiącą jest w nim goleń, rzadziej stopa.
+                    Boks tajski przywiązuje dużą wagę do klinczu, czyli walki w zwarciu. Jest to łatwo rozpoznawalny element boksu tajskiego. Pozycja walki jest głównie frontalna, ręce trzyma się szerzej niż w bokserskiej gardzie, dzięki czemu trudniej złapać w klincz. Dozwolone są przechwyty kopnięć, obalenia i podcięcia, natomiast zabronione rzuty, jakie się stosuje w judo. Cechą boksu tajskiego jest brak walki parterowej, duszeń i dźwigni oraz możliwość używania łokci (w przeciwieństwie do kickboxingu i boksu).
+                </div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <!--Kafelki przenoszące do mediów społecznościowych-->
+        <div id="socials">
+            <div id="socialsdivs">
+                <!--Facebook-->
+                <a href="https://www.facebook.com/bartek.olszewski.940" class="social-link" target="_blank">
+                    <div class="fb"><i class="icon-facebook"></i></div>
+                </a>
+                <!--Github-->
+                <a href="https://github.com/bartek3012" class="social-link" target="_blank">
+                    <div class="git"><i class="icon-github-circled-alt2"></i></div>
+                </a>
+                <!--Linkedin-->
+                <a href="https://linkedin.com/in/bartosz-olszewski-c-sharp" class="social-link" target="_blank">
+                    <div class="linkedin"><i class="icon-linkedin"></i></div>
+                </a>
+                <!--Kontakt (mail)-->
+                <a href="contact.html" class="social-link">
+                    <div class="gmail"><i class="icon-mail"></i></div>
+                </a>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <!--Stopka strony-->
+        <div id="footer">
+            2021 &copy; Bartosz Olszewski Portfolio. Zapraszam do podjęcia współpracy!
+            <i class="icon-mail-alt"></i> bartoszolszewski6@gmail.com
+        </div>
+    </div>
+    <!--Dodanie pliku js (biblioteki jquery)-->
+    <script src="../scripts/jquery.js"></script>
+</body>
+</html>
